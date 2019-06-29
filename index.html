@@ -2,7 +2,49 @@
 <html>
 	<head>
 	<title>Azerbaijanis Community Of Ontario</title>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 	<style>
   .budget {
   background-color: #8A2BE2;
@@ -74,7 +116,56 @@
     <img src="img/cover.JPG" style='width:100%;'style="margin:50px 50px" alt="Aganatiq">
   </a>
 </p>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn"><strong>BİLDİRİŞ!</strong></button>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <center><h4><strong>BİLDİRİŞ!</strong></h4></center>
+  <p><strong>Dəyərli həmvətənlər!</strong><p>
+  <p>Nəzərinizə çatdırmaq istəyirik ki, daima bir arada ola bilmək, milli bayramlarımızın 
+  və digər tədbirlərin davamlı olaraq təşkil olunması üçün məbləğdən asılı olmayaraq hər birimizin
+  edəcəyi ianə ilə (donation) icmamızın büdcəsini formalaşdırmalıyıq. Bunun üçün ana səhifədə "Donation with PayPal" 
+  butonu  aktivləşdirilib. Butona klikləyərək PayPal ödəniş səhifəsinə keçid edib, istədiyiniz məbləği icmamızın hesabına köçürə bilərsiniz.
+  PayPal hesabı olmayanlar "e-transfer" butonuna klikləyərək göstərilən email adresinə online bank vasitəsilə transfer edə bilərlər. Bundan
+  əlavə göstərilən telefon nömrəsi ilə əlaqə saxlayıb nəqd ödəniş də etmək mümkündür. "Büdcə" butonuna klikləyərək edilən bütün ianələr haqqında 
+  məlumatları (ödəyənin adı, soyadı, məbləğ, ödəniş forması və tarix) və toplam məbləği görə bilərsiniz.</p>
+  <p>Gücümüz birliyimizdədir</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 <p>
   <a href="https://paypal.me/azcomofontario" target='blank'>
