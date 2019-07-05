@@ -4,18 +4,7 @@
 	<title>Azerbaijanis Community Of Ontario</title>
 	
 	<style>
-  .budget {
-  background-color: #8A2BE2;
-  border: none;
-  color: white;
-  padding: 30px 130px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 40px;
-  margin: 4px 2px;
-  cursor: pointer;
-  }
+
   .button1 {
   background-color: #335BFF;
   border: none;
@@ -28,30 +17,7 @@
   margin: 4px 2px;
   cursor: pointer;
   }
-  .button2 {
-  background-color: #FF0000;
-  border: none;
-  color: white;
-  padding: 30px 110px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 40px;
-  margin: 4px 2px;
-  cursor: pointer;
-  }
-  .button3 {
-  background-color: #2ECC71 ;
-  border: none;
-  color: white;
-  padding: 30px 110px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 39px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+
 .footer {
    position: fixed;
    left: 0;
@@ -62,47 +28,7 @@
    text-align: center;
 }
 </style>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-</style>
 
 	</head>
 	<body background="img/az.jpg">
@@ -115,36 +41,6 @@
   </a>
 </p>
 
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">HESABAT</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="5may.html" target="blank">5 may - piknik</a>
-    <a href="11may.html" target="blank">11 may - iftar</a>
-    <a href="9june.html" target="blank">9 iyun - piknik</a>
-  </div>
-</div>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
 
 <p>
   <a href="https://paypal.me/azcomofontario" target='blank'>
@@ -156,11 +52,10 @@ window.onclick = function(event) {
   </a>
 
 	
-<center><a href="donation.html" class="budget" target='blank'>BÜDCƏ: $ 130.14 </a></center>
+<center><a href="donation.html" class="button1" target='blank'>$BÜDCƏ$  </a></center>
 
+	<center><a href="hesabat.html" class="button1" target='blank'>HESABAT </a></center>
 
-
-	
 </p>
 </br>
 </br>
