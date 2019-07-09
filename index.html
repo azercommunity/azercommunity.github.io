@@ -1,7 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-	<title>Azerbaijanis Community Of Ontario</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#London {}
+#Paris {}
+#Tokyo {}
+#Oslo {}
+</style>
+<title>Azerbaijanis Community Of Ontario</title>
 	
 	<style>
 
@@ -9,11 +42,11 @@
   background-color: #335BFF;
   border: none;
   color: white;
-  padding: 30px 110px;
+  padding: 20px 80px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 80px;
+  font-size:50px;
   margin: 4px 2px;
   cursor: pointer;
   }
@@ -28,40 +61,85 @@
    text-align: center;
 }
 </style>
-
-
-	</head>
-	<body background="img/az.jpg">
-	
-	<center><p><font size="20" color="white">Azerbaijanis Community Of Ontario</font></p></center>
+</head>
+<body background="img/az.jpg">
+<center><p><font size="20" color="white">Azerbaijanis Community Of Ontario</font></p></center>
 	
 	<p>
   <a href="https://azercommunity.github.io">
     <img src="img/cover.JPG" style='width:100%;'style="margin:50px 50px" alt="Aganatiq">
   </a>
 </p>
+<div id="London" class="tabcontent">
+ <center><h4><strong>BİLDİRİŞ!</strong></h4></center>
+  <p><strong>Dəyərli həmvətənlər!</strong><p>
+  <p>Nəzərinizə çatdırmaq istəyirik ki, daima bir arada ola bilmək, milli bayramlarımızın 
+  və digər tədbirlərin davamlı olaraq təşkil olunması üçün məbləğdən asılı olmayaraq hər birimizin
+  edəcəyi ianə ilə (donation) icmamızın büdcəsini formalaşdırmalıyıq. Bunun üçün "İANƏ" bölməsinə klikləyərək "PayPall", "E-Transfer" və nəqd ödəniş haqqında və
+ eləcə də "HESABAT" və "BÜDCƏ"  butonlarına  klikləyərək xərclənən vəsait, ianə edənlərin siyahısı və mövcud büdcə haqqında ətraflı məlumat əldə edə bilərsiniz.
+ Əlavə sualı olanlar azcomofontario@gmail.com və ya 647-676-1158 (Vasif Əliyev) nömrəli telefonla əlaqə saxlaya bilərlər.</p>
+  <p>Gücümüz birliyimizdədir</p>
+</div> 
 
-
-<p>
+<div id="Paris" class="tabcontent">
+  <h1>İANƏ</h1>
+  <p>İanələr PayPall, E-Transfer və nəqd ödəniş şəklində qəbul olunur.</p>
+  <p>1. PayPall ilə ianə etmək istəyənlər aşağıdakı "Donate with PayPall" butonuna klikləməsi xahiş olunur</p>
+  <p>2. E-Transfer vasitəsilə ianə etmək istəyənlər:</p>
+  <p>E-mail: azcomofontario@gmail.com</p>
+  <p>Tel: 647-676-1158 (Vasif Əliyev)</p>
+  <p>Transfer etdikdən sonra şifrəni sms və ya whatsapp vasitəsilə göstərilmiş telefona nömrəsinə göndərməyiniz xahiş olunur</p>
+  <p>3. Nəqd olaraq ianə etmək istəyənlərin Vasif Əliyevlə əlaqə saxlaması xahiş olunur </p>
   <a href="https://paypal.me/azcomofontario" target='blank'>
    <center> <img src="img/paypal.png"  style="margin:50px 50px" alt="Aganatiq"></center>
   </a>
+  
+</div>
 
-<a href="img/etransfer.JPG" width=100% target='blank'>
-   <center> <img src="img/interact.png"  style="margin:50px 50px" alt="Aganatiq"></center>
-  </a>
+<div id="Tokyo" class="tabcontent">
+  <h1>BÜDCƏ</h1>
+  <p>Qəbul olunmuş ianələrin hesabatı</p>
+  <center><a href="donation.html" class="button1" target='blank'>KLİKLƏYİN</a></center>
+</div>
 
-	
-<center><a href="donation.html" class="button1" target='blank'>$BÜDCƏ$  </a></center>
+<div id="Oslo" class="tabcontent">
+  <h1>HESABAT</h1>
+  <p>Keçirilmiş tədbirlərin hesabatı.</p> 
+<center><a href="hesabat.html" class="button1" target='blank'>KLİKLƏYİN</a></center>
+</div>
 
-	<center><a href="hesabat.html" class="button1" target='blank'>HESABAT </a></center>
+<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">BİLDİRİŞ</button>
+<button class="tablink" onclick="openCity('Paris', this, 'green')">İANƏ</button>
+<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">BÜDCƏ</button>
+<button class="tablink" onclick="openCity('Oslo', this, 'orange')">HESABAT</button>
 
-</p>
-</br>
-</br>
-					
-				<div class="footer">
-				<p><strong>CREATED BY: ELMADDIN KARIMOV</strong></p>
-				</div>
-	</body>
-	</html>
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+
+</html> 
+
+
+
+
+
+
+
+
